@@ -1,5 +1,5 @@
 #normal method
-def fibonacci(N):
+'''def fibonacci(N):
 	if N < 2:
 		return N
 	else:
@@ -9,7 +9,7 @@ fibonacci(8)
 for i in range(8):
     print(fibonacci(i))
 
-fibonacci(8)   
+fibonacci(8) '''  
 
 #efficient method
 
@@ -20,13 +20,13 @@ def fibonacci(n):
     return fibs
 
 
-print fibonacci(10)
-print fibonacci(10)[8]
+print fibonacci(1000)
+#print fibonacci(10)[8]
 
 #efficient
-def fib(n):
+'''def fib(n):
     a, b = 0, 1
     for _ in range(n):
         a, b = b, a+b
     return a
-print fib(10)    
+print fib(10)'''    

@@ -12,3 +12,4 @@ city = ""
 for item in full_data:
     if item[1] == 130:
         city = item[0]
+print city        
