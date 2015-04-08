@@ -3,10 +3,10 @@
 
 
 #Write a function to reverse a string.
-text = 'abhinay'
+text = 'fatma'
 def reverse(text):
-	new_text=text[::-1]
-	return new_text
+	return text[::-1]
+	
 
 reverse(text)
 
