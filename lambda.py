@@ -6,8 +6,7 @@
 #lambda function : lambda argument_list: expression 
 f = lambda x , y : x + y
 
-print "lambda's Magic"
-print f(1,2)
+print "lambda's Magic :-->",f(1,2)
 
 # The map()function
 '''map() is a function with two arguments:map(func, seq)The first 
@@ -26,17 +25,22 @@ T = [36.5, 37, 37.5, 100, 50, 49]
 
 F = map(fahrenheit, T)
 C = map(celcius, F)
-
-print F,C
+print "Example1 of map function"
+print "*************************"
+print "Fahrenheit's Value :-->",F
+print "Celsius's Value  :-->",C
 
 #Another way Around
+print "Example2 of map function with the use of lambda"
+print "***********************************************"
 Celsius = [39.2, 36.5, 37.3, 37.8]
 Fahrenheit = map(lambda x: (float(9)/5)*x + 32, Celsius)
-print Fahrenheit
+print "Fahrenheit(map's Magic):--> ",Fahrenheit
 C = map(lambda x: (float(5)/9)*(x-32), Fahrenheit)
-print C
+print "Celcius(map's magic):-->", C
 
-#Another example of map() function with lambda operator
+print "Another example of map() function with lambda operator"
+print "******************************************************"
 
 a = [1,2,3,4]
 b = [17,12,11,10]
