@@ -46,6 +46,27 @@ def sub(a,b):
 print "The Subtraction of two number are:", Sub(8,5) 
 
 
+#Multiply two number without using '*' operator.
+print "\n*******************************************************************"
+print "*****Multiplication of two number without '*' operators ***********"
+print "*******************************************************************\n"  	
 
+def mul(a,b):
+	c = 0
+	c =sum(a for i in range(b))
+	return c
 
+print "The Multiplication of two number are:", mul(8,5) 
 
+#Division two number without using '/' operator.
+print "\n*******************************************************************"
+print "*****Division of two number without '/' operators ***********"
+print "*******************************************************************\n"  	
+
+def div(x,y): 
+    quotient = 0;
+    while (x >= y):
+        x  -=  y #(if numerator is not equal or less than the divisor)
+        quotient +=1
+    return quotient;
+print "The Division of two number are:", div(10,5),"\n" 
