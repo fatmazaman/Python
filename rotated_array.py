@@ -7,15 +7,31 @@ def rotated_array(arr, key):
 	N = len(arr)
 	L = 0
 	R = N-1
-	while A[L] < A[R]:
-        M = (L+R)/2
+	while (A[L] < A[R]):
+        M = L + ((R - L) / 2)
         if A[M] == key:
         	return M
-        elif A[M] < key:
-        	
+        #the bottom half is sorted	
+        if (A[L] <= A[M]):
+        	if (A[L] <= key && key < A[M]):
+        	    R = M - 1
+            else:
+                L = M + 1	
+        #the upper half is sorted
+        else: 
+            if (A[M] < key && key <= A[R]):
+                L = M + 1;
+            else: 
+                R = M - 1;
+    return -1
 
 
+print  rotated_array([4,5,6,7,8,1,2,3], 5) 
 
 
+       
+
+
+    
   
 
