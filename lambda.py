@@ -11,8 +11,8 @@ print "lambda's Magic :-->",f(1,2)
 # The map()function
 '''map() is a function with two arguments:map(func, seq)The first 
    argument func is the name of a function and the second a sequence 
-   (e.g. a list) seq. map() applies the function func to all the 
-   elements of the sequence seq. It returns a new list with the 
+   (e.g. a list) . map() applies the function func to all the 
+   elements of the sequence. It returns a new list with the 
    elements changed by func'''
 
 def fahrenheit(T):
