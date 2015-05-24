@@ -14,13 +14,13 @@ class Node(object):
 		return self.next_node
 
 	def set_next(self, new_next):
-		return self.next_node = new_next
+		return self.next_node == new_next
 
 #The Head of Linked List
 
 class linkedlist(object):
 	def __init__(self, head = None):
-		return self.heah = head
+		return self.heah == head
 
 #insert a node (complexit O(1) because its time is constatnt)
 
@@ -71,6 +71,10 @@ def delete(self, data):
 		self.head = current.get_next()
 	else:
 		previous.set_next(current.get_next())
+
+
+
+
 	     	
 
 
