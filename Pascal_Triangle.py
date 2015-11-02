@@ -1,10 +1,9 @@
-def pascal_triangle(rows):
+def generate_pascal_triangle(rows):
+    if rows == 1: return [[1]]
 
-    if rows == 1: 
-    	return [[1]]
+    triangle = [[1], [1, 1]]
 
-    triangle = [[1], [1, 1]] 
-	row = [1, 1] 
+    row = [1, 1] 
 
     for i in range(2, rows):
         row = [1] + [sum(column) for column in zip(row[1:], row)] + [1]
@@ -12,5 +11,5 @@ def pascal_triangle(rows):
 
     return triangle
 
-for row in pascal_triangle(8):
+for row in generate_pascal_triangle(15):
     print row
