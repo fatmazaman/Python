@@ -11,5 +11,5 @@ def generate_pascal_triangle(rows):
 
     return triangle
 
-for row in generate_pascal_triangle(15):
+for row in generate_pascal_triangle(20):
     print row
